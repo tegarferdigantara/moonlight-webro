@@ -11,11 +11,11 @@
             </div>
             <div class="d-flex flex-row justify-content-between">
                 <p class="text-muted mb-1">Rohan Points</p>
-                <p class="text-muted mb-1">{{ number_format(auth()->user()->Point, 0, '.', '.') }}</p>
+                <p class="text-muted mb-1">{{ number_format(auth()->user()->point, 0, '.', '.') }}</p>
             </div>
             <div class="d-flex flex-row justify-content-between">
                 <p class="text-muted mb-1">Free Points</p>
-                <p class="text-muted mb-1">{{ number_format(auth()->user()->freepoint, 0, '.', '.') }}</p>
+                <p class="text-muted mb-1">{{ number_format(auth()->user()->gamepoints, 0, '.', '.') }}</p>
             </div>
             <div class="d-flex flex-row justify-content-between">
                 <a href="/dashboard/settings"

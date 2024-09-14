@@ -55,7 +55,7 @@
                 </a>
             </li>
         @endguest
-        <li class="nav-item menu-items">
+        {{-- <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#gameguide" aria-expanded="false"
                 aria-controls="gameguide">
                 <span class="menu-icon">
@@ -71,9 +71,9 @@
                             Acc Guide</a></li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
         <li class="nav-item menu-items">
-            <a class="nav-link" target="_blank" href="https://discord.gg/4FE5X2Kn">
+            <a class="nav-link" target="_blank" href="#">
                 <span class="menu-icon">
                     <i class="mdi mdi-discord"></i>
                 </span>
@@ -107,14 +107,11 @@
             </a>
             <div class="collapse" id="downloads">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" target="_blank"
-                            href="https://dik.si/Exceed-Google">Google Drive</a></li>
-                    <li class="nav-item"> <a class="nav-link" target="_blank"
-                            href="https://dik.si/Exceed-OneDrive">OneDrive</a></li>
-                    <li class="nav-item"> <a class="nav-link" target="_blank"
-                            href="https://dik.si/Exceed-Meganz">Mega.nz</a></li>
-                    <li class="nav-item"> <a class="nav-link" target="_blank"
-                            href="https://dik.si/Exceed-Mediafire">Mediafire</a></li>
+                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">Google
+                            Drive</a></li>
+                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">OneDrive</a></li>
+                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">Mega.nz</a></li>
+                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">Mediafire</a></li>
                 </ul>
             </div>
         </li>

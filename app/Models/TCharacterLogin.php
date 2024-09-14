@@ -11,7 +11,7 @@ class TCharacterLogin extends Model
 
     protected $guarded = ['char_id'];
 
-    protected $connection = 'sqlsrv3';
+    protected $connection = 'RohanGame';
 
     protected $table = "TCharacterLogin";
 

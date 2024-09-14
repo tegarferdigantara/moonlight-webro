@@ -78,7 +78,7 @@ return [
             'sslmode' => 'prefer',
         ],
 
-        'sqlsrv' => [
+        'sqlsrv' => [ //RohanUser
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'localhost'),
@@ -93,14 +93,14 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
-        'sqlsrv2' => [
+        'RohanMall' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE2', 'forge'),
-            'username' => env('DB_USERNAME2', 'forge'),
-            'password' => env('DB_PASSWORD2', ''),
+            'database' => env('DB_DATABASE_ROHANMALL', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
@@ -108,14 +108,29 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
-        'sqlsrv3' => [
+        'RohanGame' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE3', 'forge'),
-            'username' => env('DB_USERNAME3', 'forge'),
-            'password' => env('DB_PASSWORD3', ''),
+            'database' => env('DB_DATABASE_ROHANGAME', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
+            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+        ],
+
+        'RohanManage' => [
+            'driver' => 'sqlsrv',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '1433'),
+            'database' => env('DB_DATABASE_ROHANMANAGE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,

@@ -10,7 +10,7 @@ class AHTransactions extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
-    protected $connection = 'sqlsrv2';
+    protected $connection = 'RohanMall';
 
     protected $table = "AHTransactions";
 

@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Exceed-Rohan</title>
+    <title>{{ str_replace('_', ' ', env('APP_NAME')) }}</title>
     <!-- plugins:css -->
     <!-- <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css"> -->
     <link rel="stylesheet"
@@ -81,7 +81,7 @@
 
                                     <div class="navbar-profile">
                                         <img class="img-xs rounded-circle" src="../../../assets/images/faces/face28.jpg"
-                                            alt="">
+                                            alt="{{ auth()->user()->login_id }}">
                                         <p class="mb-0 d-none d-sm-block navbar-profile-name">Hi,
                                             {{ auth()->user()->login_id }} </p>
                                         <i class="mdi mdi-menu-down d-none d-sm-block"></i>

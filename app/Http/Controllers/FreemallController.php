@@ -15,7 +15,7 @@ class FreemallController extends Controller
     public function index()
     {
         return view('dashboard.mall.freemall.index', [
-            'TCategoryItems' => AHFreeMalls::orderBy('category', 'ASC')->paginate(7)->withQueryString()
+            'TCategoryItems' => AHFreeMalls::orderBy('id', 'ASC')->paginate(7)->withQueryString()
         ]);
     }
 
@@ -26,10 +26,10 @@ class FreemallController extends Controller
             'itemID' => 'required|integer'
         ]);
         if ($validatedData['qty'] > 0) {
-            $selectpoint = User::select('freepoint')->where('user_id', '=', auth()->user()->user_id)->get();
+            $selectpoint = User::select('gamepoints')->where('user_id', '=', auth()->user()->user_id)->get();
             $selectprice = AHFreeMalls::select('price', 'type', 'name', 'img')->where('id', '=', $validatedData['itemID'])->get();
 
-            $points = collect($selectpoint)->sum('freepoint');
+            $points = collect($selectpoint)->sum('gamepoints');
             $price = collect($selectprice)->sum('price');
             $type = collect($selectprice)->first()->type;
             $name = collect($selectprice)->first()->name;
@@ -68,7 +68,7 @@ class FreemallController extends Controller
             $order = TItem::create($dataItemmall);
 
             if ($order) {
-                User::where('user_id', auth()->user()->user_id)->decrement('freepoint', $total);
+                User::where('user_id', auth()->user()->user_id)->decrement('gamepoints', $total);
                 AHTransactions::where('user_id', auth()->user()->user_id)->create($dataTransaction);
             }
             return redirect('/freemall')->with('success', 'You have been successfully purchase an item..');

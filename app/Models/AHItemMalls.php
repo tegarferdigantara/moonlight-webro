@@ -11,7 +11,7 @@ class AHItemMalls extends Model
 
     protected $guarded = ['id'];
 
-    protected $connection = 'sqlsrv2';
+    protected $connection = 'RohanMall';
 
     protected $table = "AHItemMalls";
 }

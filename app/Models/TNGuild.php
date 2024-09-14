@@ -11,7 +11,7 @@ class TNGuild extends Model
 
     protected $guarded = ['master_id'];
 
-    protected $connection = 'sqlsrv3';
+    protected $connection = 'RohanGame';
 
     protected $table = "TNGuild";
 

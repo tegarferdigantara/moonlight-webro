@@ -15,7 +15,7 @@ class ItemmallController extends Controller
     public function index()
     {
         return view('dashboard.mall.itemmall.index', [
-            'TCategoryItems' => AHItemMalls::orderBy('category', 'ASC')->paginate(7)->withQueryString()
+            'TCategoryItems' => AHItemMalls::orderBy('id', 'ASC')->paginate(7)->withQueryString()
         ]);
     }
 
@@ -26,10 +26,10 @@ class ItemmallController extends Controller
             'itemID' => 'required|integer'
         ]);
         if ($validatedData['qty'] > 0) {
-            $selectpoint = User::select('Point')->where('user_id', '=', auth()->user()->user_id)->get();
+            $selectpoint = User::select('point')->where('user_id', '=', auth()->user()->user_id)->get();
             $selectprice = AHItemMalls::select('price', 'type', 'name', 'img')->where('id', '=', $validatedData['itemID'])->get();
 
-            $points = collect($selectpoint)->sum('Point');
+            $points = collect($selectpoint)->sum('point');
             $price = collect($selectprice)->sum('price');
             $type = collect($selectprice)->first()->type;
             $name = collect($selectprice)->first()->name;
@@ -68,7 +68,7 @@ class ItemmallController extends Controller
             $order = TItem::create($dataItemmall);
 
             if ($order) {
-                User::where('user_id', auth()->user()->user_id)->decrement('Point', $total);
+                User::where('user_id', auth()->user()->user_id)->decrement('point', $total);
                 AHTransactions::where('user_id', auth()->user()->user_id)->create($dataTransaction);
             }
             return redirect('/itemmall')->with('success', 'You have been successfully purchase an item..');
