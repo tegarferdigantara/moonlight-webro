@@ -131,12 +131,15 @@
                                 </h5>
                                 <div class="dropdown-divider"></div>
                                 <h5 class="preview-subject">
-                                    <i class="mdi mdi mdi-trophy text-primary mr-2"></i>PLAY TO WIN
+                                    <i class="mdi mdi mdi-sword text-primary mr-1"></i> SELF BUFF SYSTEM
                                 </h5>
                                 <div class="dropdown-divider"></div>
-                                <h5 class="preview-subject"><i
-                                        class="mdi mdi mdi mdi-ticket-confirmation text-primary mr-2"></i>AUTO CONSUME IP
-                                    TICKET
+                                <h5 class="preview-subject">
+                                    <i class="mdi mdi mdi-sword text-primary mr-1"></i> NO HK WAR & NO FARMING
+                                </h5>
+                                <div class="dropdown-divider"></div>
+                                <h5 class="preview-subject">
+                                    <i class="mdi mdi mdi-trophy text-primary mr-2"></i>PLAY TO WIN
                                 </h5>
                                 <div class="dropdown-divider"></div>
                                 <h5 class="preview-subject"><i
