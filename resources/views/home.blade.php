@@ -139,7 +139,7 @@
                                 </h5>
                                 <div class="dropdown-divider"></div>
                                 <h5 class="preview-subject mt-3">
-                                    <i class="mdi mdi mdi-brightness-5 text-primary mr-1"></i> MAX CLIENT: 3
+                                    <i class="mdi mdi mdi-brightness-5 text-primary mr-2"></i> MAX CLIENT: 3
                                 </h5>
                                 <div class="dropdown-divider"></div>
                                 <h5 class="preview-subject">
