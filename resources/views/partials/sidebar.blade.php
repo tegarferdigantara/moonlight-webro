@@ -107,11 +107,18 @@
             </a>
             <div class="collapse" id="downloads">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">Google
+                    <li class="nav-item"> <a class="nav-link" target="_blank"
+                            href="https://drive.google.com/file/d/1Gc8HTwYxaUPwX5YZ6vEcAK0ImseQWZUg/view?usp=sharing">Google
                             Drive</a></li>
-                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">OneDrive</a></li>
-                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">Mega.nz</a></li>
-                    <li class="nav-item"> <a class="nav-link" target="_blank" href="#">Mediafire</a></li>
+                    <li class="nav-item"> <a class="nav-link" target="_blank"
+                            href="https://1drv.ms/u/c/e9e0233e88506dfd/EQ342Qd5gF1Mv6EFC4SbLVQBIyYECLMK0-YnaSsA6slsVg?e=1vnedC">OneDrive</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" target="_blank"
+                            href="https://mega.nz/file/ayxn3TQZ#kI5CP2JN-5Y8TrTE-Jl8FQdyQGKj1PL7E8jQTBTEsZ4">Mega.nz</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" target="_blank"
+                            href="https://www.mediafire.com/file/swgptp1ux1hvtu6/Moonlight-Rohan-9-22-2024.7z/file">Mediafire</a>
+                    </li>
                 </ul>
             </div>
         </li>
