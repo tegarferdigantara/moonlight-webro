@@ -34,8 +34,8 @@
                                             <h5 class="preview-subject">MAX LEVEL</h5>
                                         </div>
                                         <div class="mr-auto text-sm-right pt-2 pt-sm-0">
-                                            <h5 class="text-muted mb-1">IV</h5>
-                                            <h5 class="text-muted">115 + HLV 50</h5>
+                                            <h5 class="text-muted mb-1">II</h5>
+                                            <h5 class="text-muted">115</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="preview-item pb-0 mb-0">
+                                {{-- <div class="preview-item pb-0 mb-0">
                                     <div class="preview-thumbnail">
                                         <div class="preview-icon bg-warning">
                                             <i class="mdi mdi mdi-shield"></i>
@@ -89,8 +89,8 @@
                                             <h5 class="text-muted">YES</h5>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="preview-item pb-0 mb-0">
+                                </div> --}}
+                                {{-- <div class="preview-item pb-0 mb-0">
                                     <div class="preview-thumbnail">
                                         <div class="preview-icon bg-info">
                                             <i class="mdi mdi mdi-calendar-text"></i>
@@ -106,7 +106,7 @@
                                             <h5 class="text-muted">YES</h5>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                         <div class="col-12">
                             <div class="preview-list">
                                 <h5 class="preview-subject mt-3">
-                                    <i class="mdi mdi mdi-brightness-5 text-primary mr-1"></i> PVE GAMEPLAY
+                                    <i class="mdi mdi mdi-brightness-5 text-primary mr-1"></i> PVP GAMEPLAY
                                 </h5>
                                 <div class="dropdown-divider"></div>
                                 <h5 class="preview-subject">
@@ -147,7 +147,7 @@
                                 <h5 class="preview-subject"><i class="mdi mdi mdi-tune text-primary mr-2"></i>NO
                                     OVERPOWER ITEMS
                                 </h5>
-                                <div class="dropdown-divider"></div>
+                                {{-- <div class="dropdown-divider"></div>
                                 <h5 class="preview-subject"><i
                                         class="mdi mdi mdi-format-list-bulleted text-primary mr-2"></i>UPGRADED ACCESSORIES
                                     SYSTEM
@@ -161,7 +161,7 @@
                                 <h5 class="preview-subject">
                                     <i class="mdi mdi mdi-format-list-bulleted text-primary mr-2"></i>BOSS HUNTING FOR
                                     TICKET UPGRADE
-                                </h5>
+                                </h5> --}}
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="preview-list">
-                                <h5 class="preview-subject mt-3">
+                                {{-- <h5 class="preview-subject mt-3">
                                     <i class="mdi mdi mdi-arrow-up-bold-circle text-danger mr-1"></i> EXP: x10
                                 </h5>
                                 <div class="dropdown-divider"></div>
@@ -188,25 +188,23 @@
                                 <h5 class="preview-subject">
                                     <i class="mdi mdi mdi-signal text-danger mr-1"></i> DROP RATE: x30
                                 </h5>
-                                <div class="dropdown-divider"></div>
-                                <h5 class="preview-subject">
+                                <div class="dropdown-divider"></div> --}}
+                                {{-- <h5 class="preview-subject">
                                     <i class="mdi mdi mdi-brightness-5 text-danger mr-1"></i> FORGE RATE:
                                     <p class="ml-5 mt-2 mb-0"> - RARE: 60% | - UNIQUE: 40%</p>
                                     <p class="ml-5"> - ANCIENT: 20%</p>
                                 </h5>
-                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-divider"></div> --}}
                                 <h5 class="preview-subject">
                                     <i class="mdi mdi mdi-brightness-5 text-danger mr-1"></i> ACCESSORIES RATE:
-                                    <p class="ml-5 mt-2 mb-0"> - 1-5: 60% | - 14: 10%</p>
-                                    <p class="ml-5 mb-0"> - 6-8: 90% | - 15-17: 1% </p>
-                                    <p class="ml-5"> - 9-13: 80% | -18: 0.3%</p>
+                                    <p class="ml-5 mt-2 mb-0"> - 1-10: 100%</p>
+                                    <p class="ml-5 mb-0"> - 10-12: 35% </p>
                                 </h5>
                                 <div class="dropdown-divider"></div>
                                 <h5 class="preview-subject">
                                     <i class="mdi mdi mdi-brightness-5 text-danger mr-1"></i> REINFORCEMENT RATE:
-                                    <p class="ml-5 mt-2 mb-0"> - 1-2: 100% | - 12-13: 20%</p>
-                                    <p class="ml-5 mb-0"> - 3-5: 90% | - 14: 10% </p>
-                                    <p class="ml-5"> - 6-11: 80% | - 15-17: 1%</p>
+                                    <p class="ml-5 mt-2 mb-0"> - 1-10: 100%</p>
+                                    <p class="ml-5 mb-0"> - 10-12: 35% </p>
                                 </h5>
                             </div>
                         </div>
