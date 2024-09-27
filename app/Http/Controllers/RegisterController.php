@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TUserLogin;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -28,12 +29,22 @@ class RegisterController extends Controller
             'email' => $validatedData['email'],
             'login_pw' => md5($validatedData['password']),
             'password' => Hash::make($validatedData['password']),
-            'Point' => 0,
-            'freepoint' => 5000,
-            'create_at' => date('Y-m-d H:i:s')
+            'point' => 0,
+            'gamepoints' => 0,
+            'create_at' => date('Y-m-d H:i:s'),
+            'token' => 123,
         ];
 
-        User::create($validasi);
+        $user = User::create($validasi);
+
+        // Simpan data ke tabel 'TUserLogin' menggunakan ID user yang baru saja dibuat
+        TUserLogin::create([
+            'user_id' => $user->id,
+            'session_id' => '',
+            'token' => 123, // Jika tabel ini memiliki kolom created_at
+            'login' => 0  // Jika tabel ini memiliki kolom updated_at
+        ]);
+
 
         return redirect('/register')->with('success', 'Registration Successful!');
     }
