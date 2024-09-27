@@ -39,7 +39,7 @@ class RegisterController extends Controller
 
         // Simpan data ke tabel 'TUserLogin' menggunakan ID user yang baru saja dibuat
         TUserLogin::create([
-            'user_id' => $user->id,
+            'user_id' => $user->user_id,
             'session_id' => '',
             'token' => 123, // Jika tabel ini memiliki kolom created_at
             'login' => 0  // Jika tabel ini memiliki kolom updated_at
