@@ -11,4 +11,11 @@ class TUserLogin extends Model
 
     protected $table = "tuserlogin";
     public $timestamps = false;
+
+    protected $fillable = [
+        'user_id',
+        'session_id',
+        'token',
+        'login'
+    ];
 }
