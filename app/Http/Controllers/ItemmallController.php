@@ -61,7 +61,7 @@ class ItemmallController extends Controller
                 'type' => $type,
                 'stack' => $validatedData['qty'],
                 'message' => 'You purchased ' . $validatedData['qty'] . ' pcs ' . $name . ' with the amount of ' . $total . ' Rps. [ITEM MALL]',
-                'points' => $total,
+                'point' => $total,
                 'login_id' => auth()->user()->login_id,
                 'date' => date("Y-m-d h:i:s")
             ];
