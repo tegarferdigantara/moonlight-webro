@@ -11,7 +11,7 @@ class TItem extends Model
 
     protected $guarded = ['id'];
 
-    protected $connection = 'RohanGame';
+    protected $connection = 'RohanMall';
 
     protected $table = "TItem";
 
