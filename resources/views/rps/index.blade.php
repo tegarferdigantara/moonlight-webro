@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-5 grid-margin stretch-card">
+        <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Top Up</h4>
@@ -58,7 +58,7 @@
                                             {{ number_format($lines_php[$index], 0, '.', '.') }}
                                         </td>
                                         <td>
-                                            <a href="https://wa.me/62895371969966?text=Hello%2C%20I%20want%20to%20buy%20moonlight%20rohan%20point%20with%20amount%20{{ number_format($rps, 0, '.', '.') }}%20%2F%20IDR%20Rp{{ number_format($lines_idr[$index], 0, '.', '.') }}%20%2F%20USD%20%24{{ number_format($lines_dollar[$index], 0, '.', '.') }}%20%2F%20PHP%20%24{{ number_format($lines_php[$index], 0, '.', '.') }}"
+                                            <a href="https://wa.me/6289555555?text=Hello%2C%20I%20want%20to%20buy%20moonlight%20rohan%20point%20with%20amount%20{{ number_format($rps, 0, '.', '.') }}%20%2F%20IDR%20Rp{{ number_format($lines_idr[$index], 0, '.', '.') }}%20%2F%20USD%20%24{{ number_format($lines_dollar[$index], 0, '.', '.') }}%20%2F%20PHP%20%24{{ number_format($lines_php[$index], 0, '.', '.') }}"
                                                 target="_blank" class="btn btn-success btn-rounded btn-fw btn-sm">Buy</a>
                                         </td>
                                     </tr>

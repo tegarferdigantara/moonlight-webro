@@ -81,20 +81,12 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#buyrps" aria-expanded="false" aria-controls="buyrps">
+            <a class="nav-link" href="{{ route('donate') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-square-inc-cash"></i>
                 </span>
-                <span class="menu-title">Buy RPS</span>
-                <i class="menu-arrow"></i>
+                <span class="menu-title">Donate</span>
             </a>
-            <div class="collapse" id="buyrps">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="#">USD</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">IDR</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#">PHP</a></li>
-                </ul>
-            </div>
         </li>
         <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#downloads" aria-expanded="false"

@@ -43,7 +43,7 @@ Route::group(['middleware' => 'guest'], function () {
 
     Route::get('/rps', function () {
         return view('rps.index');
-    });
+    })->name('donate');
 });
 
 
