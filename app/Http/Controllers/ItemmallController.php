@@ -15,8 +15,8 @@ class ItemmallController extends Controller
     public function index()
     {
         return view('dashboard.mall.itemmall.index', [
-        'TCategoryItems' => AHItemMalls::orderBy('id', 'ASC')->cursorPaginate(30)
-		]);
+            'TCategoryItems' => AHItemMalls::orderBy('id', 'ASC')->cursorPaginate(30)
+        ]);
     }
 
     public function store(Request $request)
@@ -61,7 +61,7 @@ class ItemmallController extends Controller
                 'type' => $type,
                 'stack' => $validatedData['qty'],
                 'message' => 'You purchased ' . $validatedData['qty'] . ' pcs ' . $name . ' with the amount of ' . $total . ' Rps. [ITEM MALL]',
-                'point' => $total,
+                'points' => $total,
                 'login_id' => auth()->user()->login_id,
                 'date' => date("Y-m-d h:i:s")
             ];
