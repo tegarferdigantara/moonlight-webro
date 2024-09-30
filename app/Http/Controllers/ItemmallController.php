@@ -15,8 +15,8 @@ class ItemmallController extends Controller
     public function index()
     {
         return view('dashboard.mall.itemmall.index', [
-            'TCategoryItems' => AHItemMalls::orderBy('id', 'ASC')->paginate(7)->withQueryString()
-        ]);
+        'TCategoryItems' => AHItemMalls::orderBy('id', 'ASC')->cursorPaginate(7)
+		]);
     }
 
     public function store(Request $request)
