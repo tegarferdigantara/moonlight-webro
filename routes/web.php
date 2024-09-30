@@ -40,12 +40,11 @@ Route::group(['middleware' => 'guest'], function () {
 
     Route::get('/register', [RegisterController::class, 'index'])->name('register');
     Route::post('/register', [RegisterController::class, 'store']);
-
-    Route::get('/rps', function () {
-        return view('rps.index');
-    })->name('donate');
 });
 
+Route::get('/rps', function () {
+    return view('rps.index');
+})->name('donate');
 
 
 Route::group(['middleware' => 'auth'], function () {
